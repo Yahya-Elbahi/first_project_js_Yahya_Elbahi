@@ -26,18 +26,21 @@ while (chooseUser) {
        break;
     }
     if (chooseUser === 'signin up') {
-        let name = prompt('Enter your full Name')
-        console.log(name.charAt(0).toUpperCase() + name.slice(1).trim());
-        if (/[@ #-+*/]/.test(name)) {
+        let Name = prompt('Enter your full Name')
+        console.log(Name.charAt(0).toUpperCase() + Name.slice(1).trim());
+        if (/[@ #-+*/]/.test(Name)) {
             alert('no symbol');
         }
-        if (name.length < 5) {
+        if (Name.length < 5) {
             alert('Khask tktb 5 charachters');
             continue;
         }else{
             alert('drti 5 charachter, db mzyane');
         }
     }
+    final.push(Name)
+    console.log(final);
+    
 }
 
 while (chooseUser) {
@@ -59,22 +62,7 @@ while (chooseUser) {
 
     }
 }
-// let chooseUser = prompt('what do you want to do: signing up, logging in, or changing the password.')
-
-// if(chooseUser == 'signin up'){
-//     let name = prompt('Enter your full Name')
-//     console.log(name.charAt(0).toUpperCase() + name.slice(1).trim());
-//     if (name < 5) {
-//         name == null
-//         if (name == name.toLowerCase()){
-//             alert ('lower case true');
-//            }else{
-//             alert ('lower case false');
-//            }
-//     }    
-       
-        
-//     } 
+// 
     
     
        
