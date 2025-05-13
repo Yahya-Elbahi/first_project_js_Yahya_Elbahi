@@ -55,10 +55,10 @@ while (chooseUser) {
         
         // if (email === 'Exit') 
         //     break;
-        // if (/\s/.test(email)) {
-        //     alert('madirch les espaces');
-        //     continue;
-        // }
+        if (/\s/.test(email)) {
+            alert('madirch les espaces');
+            continue;
+        }
 
     }
 }
